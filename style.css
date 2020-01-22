@@ -1,0 +1,231 @@
+body {
+  background-color: #f2f2f2;
+  font-family: 'Proxima', 'Arial', sans-serif;
+  min-width: 1024px;
+  margin: 0px 0px 8px 0px;
+  min-width: 1024px;
+}
+.list {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(34, 32, 32);
+}
+
+.position {
+  float: left;
+}
+
+.type-list {
+  text-align: center;
+  margin: 20px;
+  height: auto;
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+.active-list {
+  background-color: #4caf50;
+}
+.position-list-2 {
+  float: left;
+  margin: 20px 10px 20px 600px;
+}
+.type-list-right-menu {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.position-butten-list {
+  margin: 20px 0px 20px 20px;
+}
+.type-botten {
+  font-size: 13px;
+  font-weight: 600;
+  background-color: #47b3ac;
+  border-radius: 50px 50px 50px 50px;
+  padding: 7px;
+  text-decoration: none;
+  color: #ffffff;
+}
+.line4 {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.line5 {
+  float: left;
+}
+
+.line6 {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 20px 18px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.active {
+  background-color: #4caf50;
+}
+.all-page {
+  margin: 0px 55px 0px 55px;
+}
+.img-with-card {
+  background-image: url(img/4.jpg);
+  float: left;
+  margin: 15px;
+  width: 900px;
+  height: 440px;
+}
+.card {
+  margin: 15px;
+  width: 280px;
+  height: 440px;
+  background: rgb(255, 255, 255);
+  float: left;
+}
+.mega-card {
+  margin: 15px;
+  width: 590px;
+  height: 442px;
+  background: rgb(255, 255, 255);
+  background-image: url(img/6.jpg);
+  float: left;
+}
+.giff {
+  margin: 15px;
+  border: 20px;
+  width: 240px;
+  height: 400;
+}
+.blog-size {
+  padding: 11px 25px 25px;
+  width: 230px;
+  height: 125px;
+}
+.blog-name {
+  color: #ec345e;
+  font-weight: 600;
+  font-size: 11px;
+  margin-bottom: 7px;
+  text-align: center;
+}
+.blog-text {
+  font-weight: 600;
+  font-size: 21.5px;
+  text-align: center;
+}
+.CardWithoutPicture {
+  margin: 25px;
+  width: 230px;
+  height: 390px;
+  background: rgb(255, 255, 255);
+  float: left;
+}
+.news-card {
+  margin: 15px;
+  padding: 20px 25px;
+  width: 230px;
+  height: 400px;
+  background: rgb(255, 255, 255);
+  float: left;
+}
+.neme-blog-card {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+.news-card-content {
+  font-size: 16px;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+.blog-name-with-picture {
+  color: #ffffff;
+  background: #ec345e;
+  padding: 6px 10px 4px 10px;
+  width: 108px;
+  font-weight: 600;
+  font-size: 11px;
+  margin-bottom: 7px;
+}
+.blog-text-with-picture {
+  font-size: 30px;
+  color: white;
+  font-weight: 600;
+}
+.blog-text-with-picture-2 {
+  font-size: 21px;
+  color: white;
+  font-weight: 600;
+  margin-top: 8px;
+  font-family: 'PTSerif', serif;
+  font-style: italic;
+}
+.end-of-page {
+  background-image: url(img/7.jpg);
+  display: inline-block;
+  width: 1351px;
+  height: 290px;
+  margin-top: 50px;
+}
+.ending-name {
+  margin: 0px 465.5px 20px 465.5px;
+  padding-top: 66px;
+  font-size: 30px;
+  color: #ffffff;
+  font-weight: 600;
+  text-align: center;
+}
+.email-registr {
+  margin: 0px 465.5px 0px 465.5px;
+  width: 420px;
+  height: 40px;
+  background-color: #ffffff;
+}
+.style-text {
+  color: #645e5e91;
+  font-size: 15px;
+  padding: 10px 50px 0px 13px;
+}
+.text-after-email {
+  margin: 17px 465.5px 0px 465.5px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+}
+.end-list-page {
+  background-color: #1c1c1c;
+  padding: 55px 40px 56px 40px;
+  width: 1271px;
+  height: 257px;
+}
+.footer-text {
+  margin-bottom: 27px;
+  text-align: center;
+}
+.style-footer-text {
+  font-size: 15px;
+  margin: 15px;
+  color: #ececec;
+  font-weight: 600;
+}
+.link-info {
+  margin: 0px 300.5px 31px 300.5px;
+  width: 670px;
+  height: auto;
+  text-align: center;
+}
+.style-footer-text-2 {
+  font-size: 14px;
+  color: #888888;
+  margin-right: 20px;
+  font-weight: 500;
+}

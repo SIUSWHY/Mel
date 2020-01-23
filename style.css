@@ -26,9 +26,7 @@ body {
   text-decoration: none;
   font-weight: 600;
 }
-.active-list {
-  background-color: #4caf50;
-}
+
 .position-list-2 {
   float: left;
   margin: 20px 10px 20px 600px;
@@ -117,6 +115,7 @@ body {
   text-align: center;
 }
 .blog-text {
+  height: 125px;
   font-weight: 600;
   font-size: 21.5px;
   text-align: center;
@@ -191,9 +190,10 @@ body {
   background-color: #ffffff;
 }
 .style-text {
+  width: 300px;
   color: #645e5e91;
   font-size: 15px;
-  padding: 10px 50px 0px 13px;
+  padding: 10px 30px 0px 13px;
 }
 .text-after-email {
   margin: 17px 465.5px 0px 465.5px;
@@ -228,4 +228,27 @@ body {
   color: #888888;
   margin-right: 20px;
   font-weight: 500;
+}
+.card-status {
+  margin-top: 20px;
+  color: #a1a3a3;
+  text-align: center;
+  font-size: 13px;
+  font-family: 'Proxima', 'Arial', sans-serif;
+  font-weight: 600;
+}
+.form-control {
+  border: 0px;
+  padding: 0px;
+  width: 380px;
+  height: 36px;
+}
+.email-style-box {
+  margin: 0px 465.5px 0px 465.5px;
+  background: #ffffff;
+}
+.input-group-addon {
+  color: rgb(140, 115, 180);
+  position: absolute;
+  margin-top: 2px;
 }

@@ -227,7 +227,7 @@ body {
   font-weight: 500;
 }
 .card-status {
-  margin-top: 20px;
+  margin-top: 20px auto;
   color: #a1a3a3;
   text-align: center;
   font-size: 13px;

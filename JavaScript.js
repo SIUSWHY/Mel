@@ -11,122 +11,114 @@ const cards = [
     title: 'БЛОГИ',
     text: "New Year's Resolutions: как правильно ставить цели на год",
     img: 'img/2.png',
-    likeCount: 1,
-    viewCount: 1,
+    likeCount: 1231,
+    viewCount: 15,
   },
-  // {
-  //   title: 'УЧИТЕЛЯМ',
-  //   text: '9 весёлых способов сделать уроки географии интереснее',
-  //   img: 'img/4.png',
-  //   likeCount: 1,
-  //   viewCount: 1,
-  // },
   {
     title: 'ЭКЗАМЕНЫ',
     text:
       'Базовая математика — не тот экзамен, которого стоит бояться.Советы репетитора',
     img: 'img/3.png',
-    likeCount: 1,
-    viewCount: 1,
+    likeCount: 1541,
+    viewCount: 22,
   },
   {
     title: 'ПАРТНЁРСКИЙ МАТЕРИАЛ',
     text:
       'Этой планете нужен герой. Получится ли у вас в новом году спасти мир?',
     img: 'img/6.gif',
-    likeCount: 1,
-    viewCount: 1,
+    likeCount: 4363,
+    viewCount: 43,
   },
   {
     title: 'ВОПРОС-ОТВЕТ',
     text: 'Как организовать раздельный сбор мусора в школе?',
     img: 'img/5.png',
-    likeCount: 1,
-    viewCount: 1,
+    likeCount: 2342,
+    viewCount: 24,
   },
   {
     title: 'ПОЛЕЗНЫЕ ССЫЛКИ',
     text: '3 способа погрузиться в немецкий язык с головой',
     img: 'img/8.png',
-    likeCount: 1,
-    viewCount: 1,
+    likeCount: 515,
+    viewCount: 10,
   },
   {
     title: 'БЛОГИ «Мела»',
     text:
       'Откуда берутся гендерные стереотипы в школе и о чём мечтают молодые учителя',
     img: 'img/10.png',
-    likeCount: 1,
-    viewCount: 1,
+    likeCount: 5416,
+    viewCount: 32,
   },
   {
     title: 'ПАРТНЕРСКАЯ ПРОГРАММА',
     text:
       'Некогда поесть, присесть и поспать: как и почему устают наши дети (а главное — что с этим делать)',
     img: 'img/11.png',
-    likeCount: 1,
-    viewCount: 1,
+    likeCount: 488,
+    viewCount: 19,
   },
   {
     title: 'НОВЫЙ ГОД',
     text: '«Как год встретишь, так его и проведёшь». Почему мы верим в приметы',
     img: 'img/9.png',
-    likeCount: 1,
-    viewCount: 1,
+    likeCount: 2544,
+    viewCount: 28,
   },
   {
     title: 'БЛОГИ',
     text: 'Что должен уметь финский первоклассник: всё о подготовке к школе',
     img: 'img/9.jpg',
-    likeCount: 1,
-    viewCount: 1,
+    likeCount: 2913,
+    viewCount: 32,
   },
   {
     title: 'БЛОГИ',
     text:
       '«Учителя не успевают за потоком информации»: как школа отстаёт от реальной жизни',
     img: 'img/8.jpg',
-    likeCount: 1,
-    viewCount: 1,
+    likeCount: 648,
+    viewCount: 8,
   },
   {
     title: 'БЛОГИ',
     text:
       'Что посмотреть с детьми: 12 мультфильмов Disney и Pixar, удостоенных премии «Оскар»',
     img: 'img/12.png',
-    likeCount: 1,
-    viewCount: 1,
+    likeCount: 311,
+    viewCount: 10,
   },
   {
     title: 'БЛОГИ',
     text:
       'Что мешает подросткам полюбить классику и что мы можем с этим сделать',
     img: 'img/10.jpg',
-    likeCount: 1,
-    viewCount: 1,
+    likeCount: 894,
+    viewCount: 11,
   },
   {
     title: 'БЛОГИ',
     text: '«Больше не могу»: почему учителя уходят из начальной школы',
     img: 'img/11.jpg',
-    likeCount: 1,
-    viewCount: 1,
+    likeCount: 3478,
+    viewCount: 27,
+  },
+  {
+    title: 'БЛОГИ',
+    text: '5 проблем, из-за которых нам сложно учить иностранный',
+    img: 'img/13.png',
+    likeCount: 2147,
+    viewCount: 21,
   },
   {
     title: 'БЛОГИ',
     text:
-      'Что посмотреть с детьми: 12 мультфильмов Disney и Pixar, удостоенных премии «Оскар»',
-    img: 'img/12.png',
-    likeCount: 1,
-    viewCount: 1,
-  },
-  {
-    title: 'БЛОГИ',
-    text:
-      'Что посмотреть с детьми: 12 мультфильмов Disney и Pixar, удостоенных премии «Оскар»',
-    img: 'img/12.png',
-    likeCount: 1,
-    viewCount: 1,
+      '7 классных школ, чтобы научиться программировать и побеждать на олимпиадах',
+    img: 'img/14.png',
+    likeCount: 3184,
+    viewCount: 28,
   },
 ];
 
@@ -139,17 +131,17 @@ for (let i = 0; i < cards.length; i++) {
   new_card.style.margin = '15px';
   new_card.innerHTML = `
 <img src="${cards[i].img}" alt="picture" style="width:280px;height:220px;">
-          <div class="blog-size">
+          <div class="blog-size" style="width: 230px; height:150px;" >
             <div class="blog-name">
             ${cards[i].title}
             </div>
-            <div class="blog-text" style="width: 230px; height:125px;">
+            <div class="blog-text" style="width: 230px; height:150px;">
             ${cards[i].text}
             </div>
-            <div class="card-status">
-              <span><i class="fas fa-eye" aria-hidden="true"></i></span> 1 297
-              <span><i class="fas fa-comment" aria-hidden="true"></i></span> 6
-            </div>
+            <div class="card-status" style="margin-top:10px;">
+              <span><i class="fas fa-eye" aria-hidden="true"></i></span> ${cards[i].likeCount}
+              <span><i class="fas fa-comment" aria-hidden="true"></i></span> ${cards[i].viewCount}
+             </div>
           </div>`;
 
   document.querySelector('.cards-wrapper').appendChild(new_card);

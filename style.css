@@ -46,12 +46,33 @@ body {
 }
 .type-menu-2 {
   list-style-type: none;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   overflow: hidden;
   display: flex;
   flex-direction: row;
   max-width: 1240px;
+}
+.list-menu-with-search {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: auto;
+  max-width: 1240px;
+}
+.sort-button {
+  margin: 20px 15px 0px 0px;
+  list-style: none;
+  border: none;
+  border-radius: 25px;
+  padding: 4px;
+}
+.menu-btn {
+  border: none;
+  border-radius: 25px;
+  padding: 4px;
+  background-color: #47b3ac;
+  color: white;
 }
 .style-text-menu-2 {
   display: block;
@@ -219,9 +240,12 @@ body {
   justify-content: center;
 }
 .search {
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 20px;
   height: 20px;
   color: #a1a3a3;
-  margin: 17px 10px 0px 0px;
+  margin: 20px 10px 0px 0px;
 }
 .search-botten {
   color: white;

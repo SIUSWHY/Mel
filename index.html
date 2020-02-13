@@ -1,131 +1,116 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Мел</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
-    <header class="background-main-menu">
-      <div class="main-menu">
-        <nav>
-          <ul class="list">
-            <li class="active">
-              <a class="type-list" href="#texts">Тексты</a>
-            </li>
-            <li>
-              <a class="type-list" href="#poster">Афиша</a>
-            </li>
-            <li>
-              <a class="type-list" href="#books">Книги</a>
-            </li>
-            <li>
-              <a class="type-list" href="#school">Школы</a>
-            </li>
-            <li>
-              <a class="type-list" href="#mailing">Рассылки</a>
-            </li>
-          </ul>
-        </nav>
+<head>
+  <title>Мел</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <header class="background-main-menu">
+    <div class="main-menu">
+      <nav>
         <ul class="list">
-          <input class="search" type="text" id="text-to-find" value="" />
-          <div class="search-botten">
-            <i
-              class="fas fa-search"
-              onclick="javascript: FindOnPage('text-to-find'); return false;"
-            ></i>
-          </div>
-
-          <li>
-            <div class="icon-at-write-blog">
-              <i class="fas fa-pencil-alt"></i>
-            </div>
-            <a class="type-list-right-menu" href="#wrire-in-blog"
-              >НАПИСАТЬ В БЛОГ</a
-            >
+          <li class="active">
+            <a class="type-list" href="#texts">Тексты</a>
           </li>
-          <li class="margin-botten">
-            <a class="type-botten" href="#sign-in">ВХОД</a>
+          <li>
+            <a class="type-list" href="#poster">Афиша</a>
+          </li>
+          <li>
+            <a class="type-list" href="#books">Книги</a>
+          </li>
+          <li>
+            <a class="type-list" href="#school">Школы</a>
+          </li>
+          <li>
+            <a class="type-list" href="mailing.html">Рассылки</a>
           </li>
         </ul>
-      </div>
-    </header>
-    <div class="list-menu-with-search">
-      <ul class="type-menu-2">
-        <li><a class="style-text-menu-2" href="#b.school">ДО ШКОЛЫ</a></li>
-        <li><a class="style-text-menu-2" href="#school">ШКОЛА</a></li>
-        <li><a class="style-text-menu-2" href="#university">ВУЗ</a></li>
-        <li><a class="style-text-menu-2" href="#turn">ПЕРЕМЕНА</a></li>
-        <li><a class="style-text-menu-2" href="#family">СЕМЬЯ</a></li>
-        <li><a class="style-text-menu-2" href="#tests">ТЕСТЫ</a></li>
-        <li><a class="style-text-menu-2" href="#blogsl">БЛОГИ</a></li>
-      </ul>
-      <div>
-        <select class="sort-button">
-          <option>Sort</option>
-          <option>Popular</option>
-          <option
-            ><button type="button" class="menu-btn">
-              <span class="sort-text">Сортировать</span>
-              <i class="fas fa-sort"></i></button
-          ></option>
-        </select>
-        <!-- <menu class="sort-button">
-        <li class="sort-menu">
-          <button type="button" class="menu-btn">
-            <span class="sort-text">Сортировать</span>
-            <i class="fas fa-sort"></i>
-          </button>
+      </nav>
+      <ul class="list">
+        <input class="search" type="text" id="text-to-find" value="" />
+        <div class="search-botten">
+          <i class="fas fa-search" onclick="javascript: FindOnPage('text-to-find'); return false;"></i>
+        </div>
+        <li>
+          <div class="icon-at-write-blog">
+            <i class="fas fa-pencil-alt"></i>
+          </div>
+          <a class="type-list-right-menu" href="#wrire-in-blog">НАПИСАТЬ В БЛОГ</a>
         </li>
-        <button onclick="chg()">Date</button> -->
-      </div>
+        <li class="margin-botten">
+          <a class="type-botten" href="#sign-in">ВХОД</a>
+        </li>
+      </ul>
     </div>
-  </head>
-  <body>
-    <div class="all-page">
-      <div class="cards-wrapper"></div>
+  </header>
+  <div class="list-menu-with-search">
+    <ul class="type-menu-2">
+      <li><a class="style-text-menu-2" href="#b.school">ДО ШКОЛЫ</a></li>
+      <li><a class="style-text-menu-2" href="#school">ШКОЛА</a></li>
+      <li><a class="style-text-menu-2" href="#university">ВУЗ</a></li>
+      <li><a class="style-text-menu-2" href="#turn">ПЕРЕМЕНА</a></li>
+      <li><a class="style-text-menu-2" href="#family">СЕМЬЯ</a></li>
+      <li><a class="style-text-menu-2" href="#tests">ТЕСТЫ</a></li>
+      <li><a class="style-text-menu-2" href="#blogsl">БЛОГИ</a></li>
+    </ul>
+    <div>
+      <select class="sort-button" onchange="onSort(event)">
+        <option value="0">Sort</option>
+        <option value="viewCount">Popular</option>
+        <option value="commentCount">Comment</option>
+        <option value="newDate">Date</option>
+      </select>
     </div>
-    <div class="end-of-page">
-      <div class="ending-name">Рассылка «Мела»</div>
-      <div class="email-style-box">
-        <input class="form-control" type="text" placeholder="Ваш Email" />
-        <span class="input-group-addon">
-          <i class="fas fa-paper-plane fa-2x"></i>
-        </span>
-      </div>
-      <div class="text-after-email">
-        Мы отправляем нашу интересную и очень полезную рассылку два раза в
-        неделю: во вторник и пятницу.
-      </div>
+  </div>
+</head>
+
+<body>
+  <div class="all-page">
+    <div class="cards-wrapper"></div>
+  </div>
+  <div class="end-of-page">
+    <div class="ending-name">Рассылка «Мела»</div>
+    <div class="email-style-box">
+      <input class="form-control" type="text" placeholder="Ваш Email" />
+      <span class="input-group-addon">
+        <i class="fas fa-paper-plane fa-2x"></i>
+      </span>
     </div>
-    <div class="end-list-page">
-      <div class="footer-text">
-        <a class="style-footer-text">ДО ШКОЛЫ</a>
-        <a class="style-footer-text">ШКОЛА</a>
-        <a class="style-footer-text">ВУЗ</a>
-        <a class="style-footer-text">ПЕРЕМЕНА</a>
-        <a class="style-footer-text">СЕМЬЯ</a>
-        <a class="style-footer-text">ТЕСТЫ</a>
-        <a class="style-footer-text">БЛОГИ</a>
-      </div>
-      <div class="link-info">
-        <a class="style-footer-text-2">Контакты</a>
-        <a class="style-footer-text-2">Мероприятия</a>
-        <a class="style-footer-text-2">Корпоративные блоги</a>
-        <a class="style-footer-text-2">Пользовательское соглашение</a>
-        <a class="style-footer-text-2">Политика конфиденциальности</a>
-        <a class="style-footer-text-2">Архив материалов</a>
-        <a class="style-footer-text-2">Все авторы</a>
-        <a class="style-footer-text-2">Все блоги</a>
-        <a class="style-footer-text-2">Популярные темы</a>
-      </div>
-      <div class="social-list">
-        <a class="social-link"><i class="fab fa-pinterest fa-2x"></i></a>
-        <a class="social-link"><i class="fab fa-vk fa-2x"></i></a>
-        <a class="social-link"><i class="fab fa-facebook-f fa-2x"></i></a>
-        <a class="social-link"><i class="fab fa-odnoklassniki fa-2x"></i></a>
-        <a class="social-link"><i class="fab fa-instagram fa-2x"></i></a>
-      </div>
+    <div class="text-after-email">
+      Мы отправляем нашу интересную и очень полезную рассылку два раза в
+      неделю: во вторник и пятницу.
     </div>
-    <script src="JavaScript.js"></script>
-  </body>
+  </div>
+  <div class="end-list-page">
+    <div class="footer-text">
+      <a class="style-footer-text">ДО ШКОЛЫ</a>
+      <a class="style-footer-text">ШКОЛА</a>
+      <a class="style-footer-text">ВУЗ</a>
+      <a class="style-footer-text">ПЕРЕМЕНА</a>
+      <a class="style-footer-text">СЕМЬЯ</a>
+      <a class="style-footer-text">ТЕСТЫ</a>
+      <a class="style-footer-text">БЛОГИ</a>
+    </div>
+    <div class="link-info">
+      <a class="style-footer-text-2">Контакты</a>
+      <a class="style-footer-text-2">Мероприятия</a>
+      <a class="style-footer-text-2">Корпоративные блоги</a>
+      <a class="style-footer-text-2">Пользовательское соглашение</a>
+      <a class="style-footer-text-2">Политика конфиденциальности</a>
+      <a class="style-footer-text-2">Архив материалов</a>
+      <a class="style-footer-text-2">Все авторы</a>
+      <a class="style-footer-text-2">Все блоги</a>
+      <a class="style-footer-text-2">Популярные темы</a>
+    </div>
+    <div class="social-list">
+      <a class="social-link"><i class="fab fa-pinterest fa-2x"></i></a>
+      <a class="social-link"><i class="fab fa-vk fa-2x"></i></a>
+      <a class="social-link"><i class="fab fa-facebook-f fa-2x"></i></a>
+      <a class="social-link"><i class="fab fa-odnoklassniki fa-2x"></i></a>
+      <a class="social-link"><i class="fab fa-instagram fa-2x"></i></a>
+    </div>
+  </div>
+  <script src="JavaScript.js"></script>
+</body>
+
 </html>

@@ -67,13 +67,6 @@ body {
   border-radius: 25px;
   padding: 4px;
 }
-.menu-btn {
-  border: none;
-  border-radius: 25px;
-  padding: 4px;
-  background-color: #47b3ac;
-  color: white;
-}
 .style-text-menu-2 {
   display: block;
   color: rgb(0, 0, 0);
@@ -113,7 +106,6 @@ body {
   text-align: center;
 }
 .blog-text {
-  /* height: auto; */
   font-weight: 600;
   font-size: 21.5px;
   text-align: center;
@@ -138,12 +130,6 @@ body {
   width: 420px;
   height: 40px;
   background-color: #ffffff;
-}
-.style-text {
-  width: 300px;
-  color: #645e5e91;
-  font-size: 15px;
-  padding: 10px 30px 0px 13px;
 }
 .text-after-email {
   margin: 17px 465.5px 0px 465.5px;
@@ -262,4 +248,185 @@ body {
 .social-link {
   margin-right: 30px;
   color: #bbb;
+}
+.newsletters-container{
+  background-color: #212121;
+  border-bottom:1px solid #2e2e2e;
+  border-top:1px solid #2e2e2e;
+}
+.newsletters{
+  display: flex;
+    width: 915px;
+    margin: 0 auto;
+    padding-top: 37px;
+    line-height: normal;
+}
+.newsletters-main__title{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+}
+.newsletters-main__article{
+  width: 655px;
+    margin: 15px 0 45px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: PTSerif,serif;
+    font-size: 16px;
+    line-height: 1.44;
+    text-align: center;
+    color: #fff;
+}
+.all-mailing-page{
+  display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1000px;
+  background-color: #212121;
+  border-bottom:1px solid #2e2e2e;
+  border-top:1px solid #2e2e2e;
+}
+.newsletters-cards-plate-card-newsletters-cards-plate-card_color_red{
+  margin: 10px;
+  display: block;
+  text-decoration: none;
+  position: relative;
+  width: 285px;
+  height: 447px;
+  box-sizing: border-box;
+  padding: 34px 37px 40px 29px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px 0 rgba(0,0,0,.5);
+  background-color: #FFF;
+  color: #FFF;
+  background-color: #ff406b;
+  float: left;
+}
+.newsletters-cards{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+.newsletter-title{
+  width: 202px;
+  margin-top: 15px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+.newsletter-text{
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.newsletter-button{
+font-weight: 600;
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+bottom: 40px;
+width: 155px;
+height: 40px;
+padding-top: 3px;
+border: 1px solid rgba(255,255,255,.7);
+border-radius: 22.5px;
+font-size: 16px;
+font-weight: 700;
+color: #FFF;
+}
+.newsletters-cards-plate-card-newsletters-cards-plate-card_color_purple{
+  background-color: #a741ff;
+  margin: 10px;
+  display: block;
+  text-decoration: none;
+  position: relative;
+  width: 285px;
+  height: 447px;
+  box-sizing: border-box;
+  padding: 34px 37px 40px 29px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px 0 rgba(0,0,0,.5);
+  color: #FFF;
+  float: left;
+}
+.newsletters-cards-plate-card-newsletters-cards-plate-card_color_green{
+  background-color: #07c397;
+  margin: 10px;
+  display: block;
+  text-decoration: none;
+  position: relative;
+  width: 285px;
+  height: 447px;
+  box-sizing: border-box;
+  padding: 34px 37px 40px 29px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px 0 rgba(0,0,0,.5);
+  color: #FFF;
+  float: left;
+}
+.newsletters-cards-plate-card-newsletters-cards-plate-card_color_blue{
+background-color: #5c3fe7;
+margin: 10px;
+  display: block;
+  text-decoration: none;
+  position: relative;
+  width: 285px;
+  height: 447px;
+  box-sizing: border-box;
+  padding: 34px 37px 40px 29px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px 0 rgba(0,0,0,.5);
+  color: #FFF;
+  float: left;
+}
+.newsletters-cards-plate-card-newsletters-cards-plate-card_color_orage{
+  background-color: #ffae1f;
+  margin: 10px;
+  display: block;
+  text-decoration: none;
+  position: relative;
+  width: 285px;
+  height: 447px;
+  box-sizing: border-box;
+  padding: 34px 37px 40px 29px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px 0 rgba(0,0,0,.5);
+  color: #FFF;
+  float: left;
+}
+.newsletters-cards-plate-card-newsletters-cards-plate-card_color_white{
+  background-color: white;
+  color: black;
+  background-image: url(img/15.png);
+  background-repeat: no-repeat;
+  margin: 10px;
+  display: block;
+  text-decoration: none;
+  position: relative;
+  width: 285px;
+  height: 447px;
+  box-sizing: border-box;
+  padding: 34px 37px 40px 29px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px 0 rgba(0,0,0,.5);
+  float: left;
+}
+.newsletter-button-white{
+font-weight: 600;
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+bottom: 40px;
+width: 155px;
+height: 40px;
+padding-top: 3px;
+border: 1px solid black;
+border-radius: 22.5px;
+font-size: 16px;
+font-weight: 700;
+color: black;
 }

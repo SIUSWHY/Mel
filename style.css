@@ -375,11 +375,8 @@ height: 273px;
   float: left;
 
 }.b-author__author-info{
-  position: absolute;
     width: 775px;
     margin-top: -68px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid #E7E7E7;
 }
 .b-pb-author__image-container{
   position: relative;
@@ -393,10 +390,124 @@ height: 273px;
     z-index: 102;
 }
 .b-pb-author__image{
-  box-sizing: content-box;
-    width: 100%;
-    height: 100%;
-    border: 3px solid #fff;
-    border-radius: 100%;
-    background-color: #fff;
+box-sizing: content-box;
+width: 100%;
+height: 100%;
+border: 3px solid #fff;
+border-radius: 100%;
+background-color: #fff;
+}
+.all-margin-poster-page{
+  /* display: flex; */
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1240px;
+}
+.b-pb-author__left-column{
+  display: inline-block;
+  width: 185px;
+}
+.b-pb-author__right-column{
+  display: inline-block;
+    /* width: 590px; */
+    vertical-align: top;
+}
+.b-pb-author__name{
+  font: 700 32px Proxima,sans-serif;
+    display: inline-block;
+    padding-top: 0;
+    vertical-align: middle;
+}
+.b-pb-author__quote{
+  margin-top: 15px;
+    font-size: 15px;
+    font-family: PTSerif,sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+    overflow: hidden;
+}
+.b-pb-author__subscribe-control{
+  position: static;
+    margin-top: 25px;
+    display: inline-block;
+}
+.subscribe-button{
+  font-size: 12px;
+    background-color: #47b3ac;
+    border-radius: 50px 50px 50px 50px;
+    padding: 5px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+}
+.b-author__border{
+  padding-bottom: 30px;
+  border-bottom: 1px solid #d1d1d1;
+}
+.b-article-feed__article-preview{
+  border-bottom: 1px solid #beb5b5;
+    margin: 24px 0 30px;
+    word-wrap: break-word;  
+    display:flex;
+}
+.b-article-preview__info-section{
+  display: inline-block;
+    width: 210px;
+    vertical-align: top;
+}
+.b-article-preview__publication-date-b-article-preview__publication-date_highlighted{
+font-weight: 600;
+font-size: 14px;
+}
+.b-article-preview__publication-time{
+  font-size: 14px;
+}
+.b-article-preview__main-section{
+  display: inline-block;
+    width: 550px;
+    vertical-align: top;
+    width: 550px;
+    height: 440px;
+}
+.b-article-preview__title{
+  font-size: 22px;
+  font-weight: 600;
+}
+.b-article-preview__cover-image{
+  max-width: 450px;
+  margin-top: 15px;
+}
+.b-article-preview__read-next{
+  display: block;
+    width: 105px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    text-decoration: none;
+    color: #47B3AC;
+    border-bottom: 1px solid #C1EDEA;
+    font: 15px PTSerif,serif;
+}
+.end-list-poster-page{
+  padding: 55px 40px 56px 40px;
+  width: auto;
+  height: 100px;
+}
+.b-sm-subheader__body{
+  position: relative;
+    z-index: 15;
+    width: 1200px;
+    height: 130px;
+    margin: 0 auto;
+}
+.b-sm-subheader__logo-img{
+  width: 227px;
+  height: 130px;
+}
+.all-school-page-style{
+  background-color: white;
+}
+.l-home-school__header{
+  background-color: #f4f4ec;
 }

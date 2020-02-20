@@ -25,7 +25,7 @@
             </nav>
             <ul class="list">
                 <input class="search" type="text" id="text-to-find" value="" />
-                <div class="search-botten">
+                <div class="search-butten">
                     <i class="fas fa-search" onclick="javascript: FindOnPage('text-to-find'); return false;"></i>
                 </div>
                 <li>
@@ -34,8 +34,54 @@
                     </div>
                     <a class="type-list-right-menu" href="#wrire-in-blog">НАПИСАТЬ В БЛОГ</a>
                 </li>
-                <li class="margin-botten">
-                    <a class="type-botten" href="#sign-in">ВХОД</a>
+                <li class="margin-butten">
+                    <div>
+                        <dialog id="favDialog">
+                            <form method="dialog">
+                                <div class="registration-butten-position">Регистрация</div>
+                                <div class="g-tab__content">
+                                    <div class="bottom-margin-input-lable">
+                                        <div class="b-auth-email__input-label">Имя пользователя</div>
+                                        <div>
+                                            <input class="g-input__input" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="bottom-margin-input-lable">
+                                        <div class="b-auth-email__input-label">Имя</div>
+                                        <div>
+                                            <input class="g-input__input" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="bottom-margin-input-lable">
+                                        <div class="b-auth-email__input-label">Фамилия</div>
+                                        <div>
+                                            <input class="g-input__input" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="bottom-margin-input-lable">
+                                        <div class="b-auth-email__input-label">E-mail</div>
+                                        <div>
+                                            <input class="g-input__input" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="bottom-margin-input-lable">
+                                        <div class="b-auth-email__input-label">Пароль</div>
+                                        <div>
+                                            <input class="g-input__input" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="registr-butten-style">
+                                        <button class="b-auth-email__registration-button" id="confirmBtn"
+                                            value="default">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </dialog>
+                        <div>
+                            <button class="type-butten" id="updateDetails">Sing Up</button>
+                        </div>
+                        <output aria-live="polite"></output>
+                    </div>
                 </li>
             </ul>
         </div>

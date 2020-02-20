@@ -24,7 +24,7 @@
             </nav>
             <ul class="list">
                 <input class="search" type="text" id="text-to-find" value="" />
-                <div class="search-botten">
+                <div class="search-butten">
                     <i class="fas fa-search" onclick="javascript: FindOnPage('text-to-find'); return false;"></i>
                 </div>
                 <li>
@@ -33,8 +33,54 @@
                     </div>
                     <a class="type-list-right-menu" href="#wrire-in-blog">НАПИСАТЬ В БЛОГ</a>
                 </li>
-                <li class="margin-botten">
-                    <a class="type-botten" href="#sign-in">ВХОД</a>
+                <li class="margin-butten">
+                    <div>
+                        <dialog id="favDialog">
+                            <form method="dialog">
+                                <div class="registration-butten-position">Регистрация</div>
+                                <div class="g-tab__content">
+                                    <div class="bottom-margin-input-lable">
+                                        <div class="b-auth-email__input-label">Имя пользователя</div>
+                                        <div>
+                                            <input class="g-input__input" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="bottom-margin-input-lable">
+                                        <div class="b-auth-email__input-label">Имя</div>
+                                        <div>
+                                            <input class="g-input__input" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="bottom-margin-input-lable">
+                                        <div class="b-auth-email__input-label">Фамилия</div>
+                                        <div>
+                                            <input class="g-input__input" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="bottom-margin-input-lable">
+                                        <div class="b-auth-email__input-label">E-mail</div>
+                                        <div>
+                                            <input class="g-input__input" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="bottom-margin-input-lable">
+                                        <div class="b-auth-email__input-label">Пароль</div>
+                                        <div>
+                                            <input class="g-input__input" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="registr-butten-style">
+                                        <button class="b-auth-email__registration-button" id="confirmBtn"
+                                            value="default">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </dialog>
+                        <div>
+                            <button class="type-butten" id="updateDetails">Sing Up</button>
+                        </div>
+                        <output aria-live="polite"></output>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -47,7 +93,98 @@
             <img src="img/2.svg" alt="picture" style="width: 227px; height: 130px;">
         </div>
     </div>
-    <div class="l-home-school__header">
-        <img src="img/1.svg" alt="picture" style="width: 730px;">
+    <div>
+        <div class="l-home-school__header">
+            <div>
+                <img src="img/1.svg" alt="picture" style="width: 730px;">
+            </div>
+            <div class="l-home-school__header-content">
+                <div>
+                    <div class="l-home-school__title">
+                        Найдите в Москве лучшую школу для вашего ребёнка
+                    </div>
+                    <div>
+                        <ul class="l-home-school__title-list-item">
+                            <li class="l-home-school__title-list">- Ищите по номерам школ, адресам, станциям метро и
+                                районам
+                                Москвы</li>
+                            <li class="l-home-school__title-list">- Узнайте результаты ГИА и ЕГЭ в выбранной школе</li>
+                            <li class="l-home-school__title-list">- Сравнивайте школы</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <div class="i-control-b-search-panel-b-search-panel_stendhal-b-search-panel">
+        <div class="b-search-panel__content-wrap">
+            <div class="b-search-panel__content">
+                <div class="b-search-panel__header">Что вы ищете?</div>
+                <div>
+                    <input class="g-suggest-b-search-suggest" type="text" name value
+                        placeholder="  Номер школы,метро,район">
+                </div>
+                <div class="b-search-panel__button-wrap">
+                    <div class="b-search-panel__button">
+                        <div class="b-search-panel__button-text-b-search-panel__button-text_xl">
+                            Найти школу
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="l-home-school__information-links-wrap">
+        <div class="l-home-school__popular-schools">
+            <div class="b-popular-schools__title">популярные школы</div>
+            <div class="b-popular-schools__school-wrap-l-home-school__popular-school"></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="end-of-page">
+        <div class="ending-name">Рассылка «Мела»</div>
+        <div class="email-style-box">
+            <input class="form-control" type="text" placeholder="Ваш Email" />
+            <span class="input-group-addon">
+                <i class="fas fa-paper-plane fa-2x"></i>
+            </span>
+        </div>
+        <div class="text-after-email">
+            Мы отправляем нашу интересную и очень полезную рассылку два раза в
+            неделю: во вторник и пятницу.
+        </div>
+    </div>
+    <div class="end-list-page">
+        <div class="footer-text">
+            <a class="style-footer-text">ДО ШКОЛЫ</a>
+            <a class="style-footer-text">ШКОЛА</a>
+            <a class="style-footer-text">ВУЗ</a>
+            <a class="style-footer-text">ПЕРЕМЕНА</a>
+            <a class="style-footer-text">СЕМЬЯ</a>
+            <a class="style-footer-text">ТЕСТЫ</a>
+            <a class="style-footer-text">БЛОГИ</a>
+        </div>
+        <div class="link-info">
+            <a class="style-footer-text-2">Контакты</a>
+            <a class="style-footer-text-2">Мероприятия</a>
+            <a class="style-footer-text-2">Корпоративные блоги</a>
+            <a class="style-footer-text-2">Пользовательское соглашение</a>
+            <a class="style-footer-text-2">Политика конфиденциальности</a>
+            <a class="style-footer-text-2">Архив материалов</a>
+            <a class="style-footer-text-2">Все авторы</a>
+            <a class="style-footer-text-2">Все блоги</a>
+            <a class="style-footer-text-2">Популярные темы</a>
+        </div>
+        <div class="social-list">
+            <a class="social-link"><i class="fab fa-pinterest fa-2x"></i></a>
+            <a class="social-link"><i class="fab fa-vk fa-2x"></i></a>
+            <a class="social-link"><i class="fab fa-facebook-f fa-2x"></i></a>
+            <a class="social-link"><i class="fab fa-odnoklassniki fa-2x"></i></a>
+            <a class="social-link"><i class="fab fa-instagram fa-2x"></i></a>
+        </div>
+    </div>
+    <script src="JavaScript.js"></script>
 </body>

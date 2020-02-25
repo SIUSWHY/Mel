@@ -86,6 +86,8 @@ function FindOnPage(inputId) {
   window.location = '#' + textToFind;
 }
 
+
+
 function onSort(event) {
   sort(event.target.value);
 }
@@ -103,28 +105,11 @@ function sort(key) {
 var updateButton = document.getElementById('updateDetails');
 var favDialog = document.getElementById('favDialog');
 var outputBox = document.querySelector('output');
-var selectEl = document.querySelector('select');
-var confirmBtn = document.getElementById('confirmBtn');
 
-// "Update details" button opens the <dialog> modally
 updateButton.addEventListener('click', function onOpen() {
-  if (typeof favDialog.showModal === "function") {
-    favDialog.showModal();
-  } else {
-    alert("The <dialog> API is not supported by this browser");
-  }
+  favDialog.showModal();
 });
-// "Favorite animal" input sets the value of the submit button
-selectEl.addEventListener('change', function onSelect(e) {
-  confirmBtn.value = selectEl.value;
+
+favDialog.addEventListener('close', function onClose() {
+  outputBox = favDialog.returnValue + (document.querySelector('#updateDetails').innerText = document.querySelector('.g-input__input').value);
 });
-// "Confirm" button of form triggers "close" on dialog because of [method="dialog"]
-// favDialog.addEventListener('close', function onClose() {
-//   outputBox.value = favDialog.returnValue + " button clicked - " + (new Date()).toString();
-// });
-
-
-
-
-
-document.querySelector('#updateDetails').innerText = document.querySelector('.g-input__input').value;

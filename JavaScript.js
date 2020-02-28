@@ -111,5 +111,18 @@ updateButton.addEventListener('click', function onOpen() {
 });
 
 favDialog.addEventListener('close', function onClose() {
-  outputBox = favDialog.returnValue + (document.querySelector('#updateDetails').innerText = document.querySelector('.g-input__input').value);
+});
+
+
+$('#reg').submit(function (e) {
+  e.preventDefault();
+  $.ajax({
+    url: 'http://127.0.0.1:3000/register',
+    type: 'post',
+    data: $('#reg').serialize(),
+    success: function (response) {
+      document.querySelector('#updateDetails').innerText = response.username;
+      favDialog.close();
+    }
+  });
 });

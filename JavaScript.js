@@ -5,7 +5,7 @@ fetch('http://127.0.0.1:3000/cards').then((response) => {
     console.log(myJson)
     render(myJson)
   });
-
+//Object-card on server
 function render(sortedCards) {
   console.log(sortedCards)
   document.querySelector('.cards-wrapper').innerHTML = '';
@@ -40,6 +40,7 @@ function render(sortedCards) {
 // server - find // https://expressjs.com/en/guide/database-integration.html#mongodb
 // request - response -> cards // fetch
 
+//Serach (Ctr + F)
 var lastResFind = '';
 var copy_page = '';
 function TrimStr(s) {
@@ -87,7 +88,7 @@ function FindOnPage(inputId) {
 }
 
 
-
+//Sort cards
 function onSort(event) {
   sort(event.target.value);
 }
@@ -101,7 +102,7 @@ function sort(key) {
 }
 
 
-
+//register
 var updateButton = document.getElementById('updateDetails');
 var favDialog = document.getElementById('favDialog');
 var outputBox = document.querySelector('output');

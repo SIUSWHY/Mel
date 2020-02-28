@@ -2,9 +2,10 @@
 <html>
 
 <head>
-    <title>Мел</title>
+    <title>Рассылки|Мел</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="jquery-3.4.1.min.js"></script>
     <header class="background-main-menu">
         <div class="main-menu">
             <nav>
@@ -34,45 +35,42 @@
                     </div>
                     <a class="type-list-right-menu" href="#wrire-in-blog">НАПИСАТЬ В БЛОГ</a>
                 </li>
+
+
                 <li class="margin-butten">
                     <div>
                         <dialog id="favDialog">
-                            <form method="dialog">
+                            <form id="reg" method="dialog">
                                 <div class="registration-butten-position">Регистрация</div>
                                 <div class="g-tab__content">
                                     <div class="bottom-margin-input-lable">
                                         <div class="b-auth-email__input-label">Имя пользователя</div>
                                         <div>
-                                            <input class="g-input__input" type="text">
+                                            <input class="g-input__input" type="text" name="username">
                                         </div>
                                     </div>
                                     <div class="bottom-margin-input-lable">
                                         <div class="b-auth-email__input-label">Имя</div>
                                         <div>
-                                            <input class="g-input__input" type="text">
-                                        </div>
-                                    </div>
-                                    <div class="bottom-margin-input-lable">
-                                        <div class="b-auth-email__input-label">Фамилия</div>
-                                        <div>
-                                            <input class="g-input__input" type="text">
+                                            <input class="g-input__input" type="text" name="name">
                                         </div>
                                     </div>
                                     <div class="bottom-margin-input-lable">
                                         <div class="b-auth-email__input-label">E-mail</div>
                                         <div>
-                                            <input class="g-input__input" type="text">
+                                            <input class="g-input__input" type="text" name="email">
                                         </div>
                                     </div>
                                     <div class="bottom-margin-input-lable">
                                         <div class="b-auth-email__input-label">Пароль</div>
                                         <div>
-                                            <input class="g-input__input" type="text">
+                                            <input class="g-input__input" type="password" name="password">
                                         </div>
                                     </div>
                                     <div class="registr-butten-style">
-                                        <button class="b-auth-email__registration-button" id="confirmBtn"
-                                            value="default">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                                        <button class="b-auth-email__registration-button" id="favDialog"
+                                            type="submit">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                                        <!-- onclick="javascript: FindOnPage('favDialog'); return false;">ЗАРЕГИСТРИРОВАТЬСЯ</button> -->
                                     </div>
                                 </div>
                             </form>
@@ -83,6 +81,8 @@
                         <output aria-live="polite"></output>
                     </div>
                 </li>
+
+
             </ul>
         </div>
     </header>
